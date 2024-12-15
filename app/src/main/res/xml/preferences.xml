@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="notifications"
+        android:title="Enable Notifications"
+        android:summary="Turn notifications on or off"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="theme"
+        android:title="Select Theme"
+        android:summary="Choose your preferred theme"
+        android:entries="@array/theme_options"
+        android:entryValues="@array/theme_values"
+        android:defaultValue="light" />
+
+    <EditTextPreference
+        android:key="username"
+        android:title="Set Username"
+        android:summary="Enter your username"
+        android:dialogTitle="Enter Username" />
+
+</PreferenceScreen>
